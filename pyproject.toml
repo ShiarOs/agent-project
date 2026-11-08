@@ -1,0 +1,20 @@
+[project]
+name = "northstar-operations-assistant"
+version = "0.1.0"
+description = "Local-first support operations agent with typed tools, grounded retrieval, and memory."
+readme = "README.md"
+requires-python = ">=3.13.17"
+dependencies = [
+    "pydantic>=2.14.1",
+    "python-dotenv>=1.2.4",
+]
+
+[dependency-groups]
+dev = ["pytest>=9.1.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.uv]
+required-version = ">=0.13.5"
